@@ -8,13 +8,14 @@ library(dplyr)
 library(stringr)  
 library(tidyr)    
 
-setwd("~/Documents/DSProjects/Palmetto-from-R")
-source("/home/roberto/Documents/DSProjects/PinkOctoberMovember-Analysis/lda.R")
-p_campaign <- "BN-2015"
+setwd("/Users/roberto.walter/Documents/code_source/github/mestrado-stuff/PinkOctoberMovember-Analysis-master/")
+source("/Users/roberto.walter/Documents/code_source/github/mestrado-stuff/PinkOctoberMovember-Analysis-master/lda.R")
+p_campaign <- "BN"
+p_year <- 2017
 
 print(paste("Starting works on", p_campaign, "campaign!"))
-dtm <- get_dtm(p_campaign)
-setwd("~/Documents/DSProjects/Palmetto-from-R")
+dtm <- get_dtm(p_campaign, p_year)
+setwd("~/Documents/code_source/github/Palmetto-from-R")
 
 print("Starting to generate LDA results")
 for(i in 2:17){
@@ -51,11 +52,11 @@ for(i in 2:17){
 output_file <- data.frame(x = character(), y = numeric())
 
 print("Getting files")
-file.names <- list.files(path = gsub(" ", "", paste('/home/roberto/Documents/DSProjects/Palmetto-from-R/final_results/', p_campaign, "/")))
-
+file.names <- list.files(path = gsub(" ", "", paste('final_results/', p_campaign, "/")))
+file <- "BN-3-final.csv"
 for(file in file.names){
   print(paste("Working on", file))
-  command = paste("./palmetto.sh", "C_V", gsub(" ", "", paste("/home/roberto/Documents/DSProjects/Palmetto-from-R/final_results/", p_campaign, "/", file)))
+  command = paste("./palmetto.sh", "C_V", gsub(" ", "", paste("/Users/roberto.walter/Documents/code_source/github/Palmetto-from-R/final_results/", p_campaign, "/", file)))
   result = system(command,intern=TRUE)  
   
   sum <- 0
