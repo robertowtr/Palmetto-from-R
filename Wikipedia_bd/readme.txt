@@ -1,0 +1,1 @@
+Add arquivos base do Wikipedia_db disponibilizados no site do Palmetto
