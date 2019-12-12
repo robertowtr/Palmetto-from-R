@@ -1,0 +1,17 @@
+x y
+PO-10-final.csv 0.372367
+PO-11-final.csv 0.365735454545455
+PO-12-final.csv 0.382035
+PO-13-final.csv 0.372202307692308
+PO-14-final.csv 0.370035
+PO-15-final.csv 0.377902
+PO-16-final.csv 0.386857333333333
+PO-17-final.csv 0.360138666666667
+PO-2-final.csv 0.396485
+PO-3-final.csv 0.395926666666667
+PO-4-final.csv 0.3706575
+PO-5-final.csv 0.381578
+PO-6-final.csv 0.371956666666667
+PO-7-final.csv 0.368955714285714
+PO-8-final.csv 0.38602
+PO-9-final.csv 0.38018

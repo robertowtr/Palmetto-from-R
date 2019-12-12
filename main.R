@@ -8,11 +8,11 @@ library(dplyr)
 library(stringr)  
 library(tidyr)    
 
-p_campaign <- "BN"
-p_year <- 2017
+p_campaign <- "PO"
+p_year <- 2018
 
-for(p_campaign in c("BN", "PO")){
-  for (p_year in c(2014, 2015, 2016, 2017, 2018)) {
+for(p_campaign in c("PO")){
+  for (p_year in c(2017, 2018)) {
 
     setwd("/Users/roberto.walter/Documents/code_source/github/mestrado-stuff/PinkOctoberMovember-Analysis-master/")
     source("/Users/roberto.walter/Documents/code_source/github/mestrado-stuff/PinkOctoberMovember-Analysis-master/lda.R")
@@ -22,6 +22,7 @@ for(p_campaign in c("BN", "PO")){
     setwd("~/Documents/code_source/github/Palmetto-from-R")
     
     print("Starting to generate LDA results")
+    i = 17
     for(i in 2:17){
       print(paste("Working on", i, "topic! :D"))
       # set a seed so that the output of the model is predictable
@@ -57,7 +58,7 @@ for(p_campaign in c("BN", "PO")){
     
     print("Getting files")
     file.names <- list.files(path = gsub(" ", "", paste('final_results/', p_campaign, "/")))
-    file <- "BN-3-final.csv"
+    file <- "PO-10-final.csv"
     for(file in file.names){
       print(paste("Working on", file))
       command = paste("./palmetto.sh", "C_V", gsub(" ", "", paste("/Users/roberto.walter/Documents/code_source/github/Palmetto-from-R/final_results/", p_campaign, "/", file)))

@@ -1,0 +1,17 @@
+x y
+BN-10-final.csv 0.377764
+BN-11-final.csv 0.373741818181818
+BN-12-final.csv 0.372064166666667
+BN-13-final.csv 0.373339230769231
+BN-14-final.csv 0.371262142857143
+BN-15-final.csv 0.365288
+BN-16-final.csv 0.37984
+BN-17-final.csv 0.378077333333333
+BN-2-final.csv 0.442195
+BN-3-final.csv 0.399003333333333
+BN-4-final.csv 0.44361
+BN-5-final.csv 0.40354
+BN-6-final.csv 0.422316666666667
+BN-7-final.csv 0.398142857142857
+BN-8-final.csv 0.3979275
+BN-9-final.csv 0.383652222222222
